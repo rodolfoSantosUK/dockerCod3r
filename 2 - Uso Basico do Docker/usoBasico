@@ -21,3 +21,7 @@ curl http://localhost:8080
 MAPEAR VOLUMES DE CONTAINER
 
 sudo docker container run -p 8080:80 -v $(pwd)/html:/usr/share/nginx/html zealous_bohr
+
+RODAR UM SERVIDOR EM BACKGROUND
+
+sudo docker container run -d --name ex_daemon-basic -p 8080:80 -v $(pwd)/html:/usr/share/nginx/html nginx
