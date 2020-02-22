@@ -1,0 +1,13 @@
+
+BAIXADO E EXECUTANDO CONTAINER USANDO COMANDO PULL
+
+docker image pull redis:latest
+
+COMANDO BASICOS
+
+docker image pull
+docker image ls
+docker image inspect
+docker image tag <imagem de Origem> <tag>
+docker image build
+docker image push

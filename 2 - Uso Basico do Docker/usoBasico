@@ -31,3 +31,9 @@ GERENCIAR CONTAINER EM BACKGROUND
 sudo docker container restart  zealous_bohr
 sudo docker container stop     zealous_bohr
 sudo docker container start    zealous_bohr
+
+MANIPULACAO DE CONTAINER EM MODO DAEMON
+
+sudo docker container logs zealous_bohr
+sudo docker container inspect zealous_bohr
+sudo docker container exec zealous_bohr
