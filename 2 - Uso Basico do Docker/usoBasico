@@ -25,3 +25,9 @@ sudo docker container run -p 8080:80 -v $(pwd)/html:/usr/share/nginx/html zealou
 RODAR UM SERVIDOR EM BACKGROUND
 
 sudo docker container run -d --name ex_daemon-basic -p 8080:80 -v $(pwd)/html:/usr/share/nginx/html nginx
+
+GERENCIAR CONTAINER EM BACKGROUND
+
+sudo docker container restart  zealous_bohr
+sudo docker container stop     zealous_bohr
+sudo docker container start    zealous_bohr
