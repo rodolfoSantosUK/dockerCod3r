@@ -1,0 +1,19 @@
+
+Exibe os containers ativos na maquina
+docker container ps
+
+Exibe os container independente do estado
+docker container ps -a
+
+DANDO NOME AOS CONTAINERS
+
+sudo docker container run --name meuDebian -it debian bash
+
+sudo docker container ls -a
+
+sudo docker container start -ai meuDebian  (STARTANDO O CONTAINER)
+
+MAPEAR PORTAS DE CONTAINERS
+
+sudo docker container run -p 8080:80 nginx
+curl http://localhost:8080
