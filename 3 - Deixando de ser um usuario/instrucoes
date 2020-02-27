@@ -11,3 +11,8 @@ docker image inspect
 docker image tag <imagem de Origem> <tag>
 docker image build
 docker image push
+
+
+INSTALANDO EXTENSÃO DOCKER NO VSCODE
+
+
