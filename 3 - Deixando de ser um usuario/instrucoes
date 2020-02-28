@@ -16,3 +16,14 @@ docker image push
 INSTALANDO EXTENSÃO DOCKER NO VSCODE
 
 
+CRIANDO PRIMEIRA IMAGEM
+
+criando arquivo Dockerfile
+
+FROM nginx:latest
+RUN echo '<h1>Hello World !!</>' > /usr/share/nginx/html/index.html
+
+Comando para criar a imagem:
+
+sudo docker image build -t ex_simple-build .
+
