@@ -27,3 +27,19 @@ Comando para criar a imagem:
 
 sudo docker image build -t ex_simple-build .
 
+CRIANDO IMAGEM COM ARGUMENTO
+
+FROM debian
+LABEL maintainer 'Aluno cod3r <aluno at cod3r.com.br>'
+
+ARG S3_BUCKET=files
+ENV S3_BUCKET=${S3_BUCKET}
+
+sudo docker image build -t ex_docker_build_arg .
+
+// sem passar argumento
+sudo docker container run ex_docker_build_arg bash -c 'echo $S3_BUCKET'
+
+//passando argumento
+sudo docker image build --build-arg S3_BUCKET=myApp -t ex_build_arg .
+sudo docker container run ex_build_arg bash -c 'echo $S3_BUCKET'
