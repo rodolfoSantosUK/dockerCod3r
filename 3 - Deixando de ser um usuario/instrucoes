@@ -1,9 +1,9 @@
 
-BAIXADO E EXECUTANDO CONTAINER USANDO COMANDO PULL
+* BAIXADO E EXECUTANDO CONTAINER USANDO COMANDO PULL
 
 docker image pull redis:latest
 
-COMANDO BASICOS
+* COMANDO BASICOS
 
 docker image pull
 docker image ls
@@ -12,18 +12,18 @@ docker image tag <imagem de Origem> <tag>
 docker image build
 docker image push
 
-EVITANDO USAR O SUDO NA MAQUINA LOCAL
+* EVITANDO USAR O SUDO NA MAQUINA LOCAL
 sudo usermod -aG docker rodolfo
 
 INSTALANDO EXTENSÃO DOCKER NO VSCODE
 
-CRIANDO UM DOCKERFILE
+* CRIANDO UM DOCKERFILE
 
 // baseando a imagem a partir de nginx
 FROM nginx:latest
 RUN echo '<h1> Hello World! </h1>' > /usr/share/nginx/html/index.html
 
-CRIANDO PRIMEIRA IMAGEM
+* CRIANDO PRIMEIRA IMAGEM
 
 criando arquivo Dockerfile
 
@@ -34,7 +34,7 @@ Comando para criar a imagem:
 
 sudo docker image build -t ex_simple-build .
 
-CRIANDO IMAGEM COM ARGUMENTO
+* CRIANDO IMAGEM COM ARGUMENTO
 
 FROM debian
 LABEL maintainer 'Aluno cod3r <aluno at cod3r.com.br>'
