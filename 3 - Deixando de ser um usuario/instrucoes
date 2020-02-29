@@ -67,3 +67,7 @@ sudo docker container run -p 80:80 ex-build-copy
 
 * USO DAS INSTRUÇÕES PARA EXECUÇÃO DO CONTAINER(PARTE 1)
 Criar diretório : CURSO-DOCKER/build-dev
+
+sudo docker image build -t ex-build-dev .
+
+sudo docker container run -it -v $(pwd):/app -p 80:8000 --name python-server ex-build-dev
