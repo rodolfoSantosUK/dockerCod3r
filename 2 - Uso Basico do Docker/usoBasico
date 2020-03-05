@@ -37,3 +37,9 @@ MANIPULACAO DE CONTAINER EM MODO DAEMON
 sudo docker container logs zealous_bohr
 sudo docker container inspect zealous_bohr
 sudo docker container exec zealous_bohr
+
+
+   
+
+
+
